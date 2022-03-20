@@ -1,21 +1,21 @@
 L = []
 class menu:
-    def __init__(self,item,price) :
-        self.price = price
-        self.item = item
-    def add(self,item,price):
-        L.append([self.item,self.price])
-    def show(L):
-        print(L)
+    def add(item,name,price) :
+         item.price = price
+         item.name = name
+         
+    def add(item,name,price):
+        L.append((name,price))    
+    def show(self):
+        print(str(L))
 
-
+m = menu()
 def main():
-    m = menu()
     m.add("idly",10)
     m.add("vada",20)
     m.show()
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
 
         
